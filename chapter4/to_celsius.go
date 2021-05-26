@@ -1,15 +1,12 @@
 package main
 
 import (
-	"bufio"
 	"fmt"
+	"keyboard"
 	"log"
-	"os"
-	"strconv"
-	"strings"
 )
 
-func getFloat() (float64, error) {
+/*func getFloat() (float64, error) {
 	reader := bufio.NewReader(os.Stdin)
 	input, err := reader.ReadString('\n')
 	if err != nil {
@@ -21,11 +18,11 @@ func getFloat() (float64, error) {
 		return 0, err
 	}
 	return number, nil
-}
+}*/
 
 func main() {
 	fmt.Print("Enter a temperature in Fahrenheit:")
-	fahrenheit, err := getFloat()
+	fahrenheit, err := keyboard.GetFloat()
 	if err != nil {
 		log.Fatal(err)
 	}

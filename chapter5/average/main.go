@@ -8,5 +8,6 @@ func main() {
 	for _, value := range numbers {
 		sum += value
 	}
-	fmt.Println(sum)
+	arrayCount := len(numbers)
+	fmt.Printf("Average is %.2f", sum/float64(arrayCount))
 }

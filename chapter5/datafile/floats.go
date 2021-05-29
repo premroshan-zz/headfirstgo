@@ -7,8 +7,9 @@ import (
 	"strconv"
 )
 
-func GetFloats(fileName string) ([3]float64, error) {
-	var numbers [3]float64
+func GetFloats(fileName string) ([9]float64, error) {
+	fmt.printf("Changed")
+	var numbers [9]float64
 	file, err := os.Open(fileName)
 	if err != nil {
 		return numbers, err

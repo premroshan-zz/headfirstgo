@@ -3,12 +3,13 @@ package datafile
 
 import (
 	"bufio"
+	"fmt"
 	"os"
 	"strconv"
 )
 
 func GetFloats(fileName string) ([9]float64, error) {
-	fmt.printf("Changed")
+	fmt.Printf("Changed")
 	var numbers [9]float64
 	file, err := os.Open(fileName)
 	if err != nil {
